@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fair.css"/>
+
+</head>
+<body onload="startTime()" >
+    <section>
+        <div class="right">
+            <div id="p">
+                <h2 style="margin-bottom: 2vh; ">(+) Add note</h2>
+                <div class="toolbox">
+                    <input type="text" placeholder="Enter a new task" id="inputbx" style="width: 60%; height: 30px; outline: none;">
+                <button id="add" >Add</button>
+                <div class="scroll-list" style="text-align: center;">
+                    <ul id="task-list" style="text-align: center;">
+                    
+                    </ul>
+                </div>
+                </div>
+                </div>
+                <div id="count">
+    
+                    <p style="margin-bottom: 3vh;"> Countdown Timer</p>  
+                    <div class="clock-input">
+                      <input type="date" name="time-to" class="time-to" id="time-to" value=”” onchange="calcTime(this.value)" style="width: 60%; height: 30px; border-radius: 12px; outline: none;"/>
+                    </div>
+                    <div class="row">
+                      <div class="time">
+                         <p class="clock-day clock-timer"></p>
+                         <p class="clock-label">Days</p>
+                      </div>
+                      
+                      <div class="time">
+                        <p class="clock-hours clock-timer"></p>
+                        <p class="clock-label">Hours</p>
+                      </div>
+                      
+                      <div class="time">
+                        <p class="clock-minutes clock-timer"></p>
+                        <p class="clock-label">Mint</p>
+                      </div>
+                      
+                      <div class="time">
+                        <p class="clock-seconds clock-timer"></p>
+                        <p class="clock-label">Sec</p>
+                      </div>
+                    </div>
+                
+                </div>
+
+        </div>
+        <div class="mid">
+            <div style="text-align: center; margin: 0.1em;" class="s"> 
+            <form method="get" action="https://www.google.com/search?gs_ssp">
+                <input type="search" class="form-control" placeholder="Search or type the URL" style="width: 100%; height: 40px; border-radius: 17px;  outline: none; padding-left: 8vh;" />
+               </form>
+              
+            </div>
+
+            <div class="icon">
+             
+              <a href="https://www.facebook.com/"> <i class="fa-brands fa-facebook fa-2xl" style="color: #0457e7;"> </i></a> 
+               
+              <a href="https://www.instagram.com/">  <i class="fa-brands fa-instagram fa-2xl" style="color: #f00a2c;"></i></a>
+              <a href="//mail.google.com/mail/u/0/#inbox"> <i class="fa-solid fa-envelope fa-2xl" style="color: #ed0c2a;"></i></a> 
+               <a href="https://www.google.com/search?q=tictoc&rlz"> <i class="fa-brands fa-tiktok fa-2xl" style="color: #e2db08;"></i></a>
+                <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin fa-2xl" style="color: #0656e0"></i></a>
+               <a href="https://www.youtube.com/"> <i class="fa-brands fa-youtube fa-2xl" style="color: #d80e0e; "></i></a>
+                <a href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #09d30c; "></i></a>
+              <a href="https://twitter.com/login">  <i class="fa-brands fa-twitter fa-2xl" style="color: #0f60eb; "></i></a>
+               <a href="https://music.youtube.com/"> <i class="fa-solid fa-music fa-2xl" style="color: #da3f0b;"></i></a>
+              <a href="https://www.accuweather.com/"> <i class="fa-solid fa-cloud fa-2xl" style="color: #0bc139; "></i></a> 
+               <a href="https://download.cnet.com/download-app/3000-18513_4-75864009.html"> <i class="fa-solid fa-download fa-2xl" style="color: #e50606;"></i></a>
+              </div>
+            
+
+        </div>
+        <div class="left">
+          <div id="box1">
+            <h2 class="p">Time</h2>
+  
+            <p id="txt"></p> 
+          </div>
+        </div>
+    </section>
+<script src="fair.js"></script>
+</body>
+</html>
